@@ -1,13 +1,21 @@
 # rails app templates: coffeescript.rb
 
+gem "guard-coffeescript", :group => :development
+# run "bundle install"
+# run "guard init coffeescript"
+
+# file "Guardfile", <<-END
+# # use shorthand style
+# guard 'coffeescript', :input => 'app/assets/coffeescripts', :output => 'public/javascripts'
+# END
+
 inside("app/assets") do
   run "mkdir coffeescripts"
-  file "app.coffee", <<-END
-alert('bingo!')
-  END
+  run "touch demo.coffee"
 end
 
-file "Guardfile", <<-END
-# use shorthand style
-guard 'coffeescript', :input => 'app/assets/coffeescripts', :output => 'public/javascripts'
-END
+# say <<-END
+# Complete! You MUST add this guard script in your Guardfile.
+# 
+# guard 'coffeescript', :input => 'app/assets/coffeescripts', :output => 'public/javascripts'
+# END
