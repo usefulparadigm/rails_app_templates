@@ -1,6 +1,7 @@
 # rails app template: compass-960.rb
 # https://github.com/nextmat/compass-960-plugin
 
+gem "compass"
 gem "compass-960-plugin", :require => 'ninesixty'
 
 inside("app/assets/stylesheets") do
@@ -13,7 +14,7 @@ END
 end
 
 initializer 'compass.rb', <<-CODE
-# for more info http://compass-style.org/help/tutorials/configuration-reference/
+# for more info on http://compass-style.org/help/tutorials/configuration-reference/
 Compass.configuration do |config|
   config.project_path = File.dirname(__FILE__)
   config.sass_dir = 'app/assets/stylesheets'
