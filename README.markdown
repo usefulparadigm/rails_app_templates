@@ -6,11 +6,11 @@ Rails App Templates are simple ruby files containing DSL for adding plugins/gems
 
 On new rails project:
 
-	$ rails new thud -m https://gist.github.com/722911.txt
+	$ rails new [app_name] -m https://github.com/usefulparadigm/rails_app_templates/raw/master/backbone.rb
 	
 On existing rails project:
 
-	$ rake rails:template LOCATION=~/template.rb
+	$ rake rails:template LOCATION=https://github.com/usefulparadigm/rails_app_templates/raw/master/backbone.rb
 
 
 #### References
