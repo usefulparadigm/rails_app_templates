@@ -40,11 +40,11 @@ sass_dir = "app/assets/stylesheets"
 # sass-convert -R --from scss --to sass app/stylesheets scss && rm -rf sass && mv scss sass
 END
 
-initializer 'compass.rb', <<-END
-require 'compass'
-require 'compass/app_integration/rails'
-Compass::AppIntegration::Rails.initialize!
-END
+# initializer 'compass.rb', <<-END
+# require 'compass'
+# require 'compass/app_integration/rails'
+# Compass::AppIntegration::Rails.initialize!
+# END
 
 file 'app/assets/stylesheets/application.scss', <<-END
 @import "base";
