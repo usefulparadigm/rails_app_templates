@@ -23,6 +23,6 @@ CODE
 route "match '/auth/:provider/callback', :to => 'sessions#create'"
 
 say <<-END
-Complete! Edit config/initializer/omniauth.rb to activate service provider's API.\n
+\nComplete! Edit config/initializer/omniauth.rb to activate service provider's API.\n
 END
 
